@@ -4,7 +4,6 @@ import NavBar from "./components/Navbar";
 import SearchInput from "./components/SearchInput";
 import GithubCard from "./components/Card";
 
-
 const defaultUser = {
   login: "yourname",
   name: "Your Name",
@@ -30,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`flex flex-col items-center justify-center h-screen font-mono p-4 ${isDarkMode ? 'bg-[#141D2F]' : 'bg-[#F6F8FF]'}`}>
+    <div className={`flex flex-col items-center justify-start min-h-screen font-mono p-4 ${isDarkMode ? 'bg-[#141D2F]' : 'bg-[#F6F8FF]'}`}>
       <div className="w-full max-w-[730px]">
         <NavBar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
         <SearchInput isDarkMode={isDarkMode} setUserData={setUserData} />
